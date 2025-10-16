@@ -1,11 +1,7 @@
-class utilits:
-    
-
-
+from service import menu
 
 def main():
-    pass
-
+    menu()
 
 
 if __name__ == "__main__":
