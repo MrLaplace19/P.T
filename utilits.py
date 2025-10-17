@@ -4,6 +4,7 @@ from scapy.all import TCP,IP,sr1,ICMP
 
 def scan(ip, port):
     port = int(port)
+    ip = str(ip)
     packet = IP(dst = ip) / TCP(dport = port, flags = "S")
     resp = sr1(packet, timeout = 1,verbose = 0)
     if (resp is None):
